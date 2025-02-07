@@ -1,0 +1,265 @@
+{
+    "cricketBats": [
+      {
+        "id": 1,
+        "name": "BA 56 KING'S EDITION",
+        "brand": "Kookaburra",
+        "price": 12500,
+        "weight": "2.8 lbs",
+        "material": "High-quality English willow with 9+ grains",
+        "image": "images/CAbat.jpg",
+        "variantImages": [
+          { "src": "images/CAbat1.jpg" },
+          { "src": "images/CAbat2.jpg" },
+          { "src": "images/CAbat.jpg" }
+        ],
+        "description":"The BA 56 King’s Edition English Willow Bat is specially designed for Babar Azam. Made from high-quality English willow with at least 9 grains, this bat gives great power and control. The thick sweet spot and curved blade make strong and accurate shots easy. It has a comfortable cane handle with a soft grip and comes with strong Glass Protek technology. Colorful 3D stickers give it a classy look. It’s ready to play but works best with pre-oiling and knocking."
+      },
+      {
+        "id": 2,
+        "name": "Pro Performance 5000",
+        "brand": "Gunn & Moore",
+        "price": 10950,
+        "weight": "2.9 lbs",
+        "material": "Premium-grade English willow",
+        "image": "images/probat.jpg",
+        "variantImages": [
+          { "src": "images/probat1.jpg" },
+          { "src": "images/probat2.jpg" }
+        ],
+        "description":"The Pro Performance 5000 English Willow Bat is made for those cricketers who demand accuracy and punch. The premium quality English willow material it's made from, offers performance, with a huge sweet spot, and balanced grip, and therefore the perfect design for the cricketer wanting to be dominant. The combination of durability with better stroke play has made it the ideal bat for professionals as well as for enthusiastic cricketers."
+      },
+      {
+        "id": 3,
+        "name": "Pro premium Power",
+        "brand": "Gunn & Moore",
+        "price": 11950,
+        "weight": "2.9 lbs",
+        "material": "Premium-grade English willow",
+        "image": "images/proPbat.jpg",
+        "variantImages": [
+          { "src": "images/proPbat1.jpg" },
+          { "src": "images/proPbat2.jpg" },
+          { "src": "images/proP3.jpg" }
+        ],
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 4,
+        "name": "CA NJ-8000",
+        "brand": "CA",
+        "price": 7200,
+        "weight": "2.9 lbs",
+        "material": "Premium-grade English willow",
+        "image": "images/blackbat.jpg",
+        "variantImages": [
+          { "src": "images/blackbat1.jpg" },
+          { "src": "images/blackbat2.jpg" }
+        ],
+        "description":"NJ- 8000 is a part of the fiber bats series which is made from fiber composite."
+      }
+     
+    ],
+    "balls": [
+      {
+        "id": 5,
+        "name": "SUPER TEST PINK",
+        "brand": "Kookaburra",
+        "price":  9550,
+        "type": "Leather",
+        "weight": "156 grams",
+        "image": "images/redball.jpg",
+        "variantImages": [
+          { "src": "images/redball1.jpg" },
+          { "src": "images/redball2.jpg" }
+        ],
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 6,
+        "name": "SUPER TEST WHITE",
+        "brand": "SUPER",
+        "price": 9850,
+        "type": "Leather",
+        "weight": "156 grams",
+        "image": "images/whiteball1.jpg",
+        "variantImages": [
+          { "src": "images/whiteball.jpg" },
+          { "src": "images/whiteball2.jpg" }
+        ],
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 7,
+        "name": "SUPER TEST RED",
+        "brand": "SUPER",
+        "price": 8950,
+        "type": "Leather",
+        "weight": "146 grams",
+        "image": "images/pinkball2.jpg" ,
+        "variantImages": [
+          { "src": "images/pinkball.jpg" },
+          { "src": "images/pinkball1.jpg" }
+        ],
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 8,
+        "name": "COSCO Rubber Ball",
+        "brand": "COSCO",
+        "price": 7950,
+        "type": "Rubber",
+        "weight": "150 grams",
+        "image": "images/redball1.jpg",
+        "description":"Product of CA PRO."
+      }
+    
+    ],
+    "kits":[
+      {
+          "id": 9,
+          "name": "Pro 1000 Junior Complete Kit",
+          "brand": "Pro",
+          "price": 24800,
+          "type": "Pro",
+          "weight": "",
+          "image": "images/completekit.jpg",
+          "description":"Product of CA PRO."
+        
+
+      }
+    ],
+    "shoes":[
+      {
+          "id": 10,
+          "name": "BIG BANG SPIKES (BLUE)",
+          "brand": "CA",
+          "price": 9000,
+          "type": "Pro",
+          "weight": "",
+          "image": "images/shoe1.jpg",
+          "description":"Product of CA PRO."
+      
+      },
+      {
+        "id": 11,
+        "name": "Big Bang Pro",
+        "brand": "CA",
+        "price": 7000,
+        "type": "Pro",
+        "weight": "",
+        "image": "images/shoe2.jpg",
+        "description":"Product of CA PRO."
+    
+    },
+    {
+      "id": 12,
+      "name": "Big Bang Pro",
+      "brand": "CA",
+      "price": 9500,
+      "type": "Pro",
+      "weight": "196 grams",
+      "image": "images/shoe3.jpg",
+      "description":"Product of CA PRO."
+  
+  },
+  {
+    "id": 13,
+    "name": "Big Bang Pro",
+    "brand": "CA",
+    "price": 8500,
+    "type": "Pro",
+    "weight": "186 grams",
+    "image": "images/shoe4.jpg",
+    "description":"Product of CA PRO."
+
+},
+{
+  "id": 14,
+  "name": "CA KAMO SPIKES Navy Blue",
+  "brand": "CA",
+  "price": 8000,
+  "type": "Pro",
+  "weight": "196 grams",
+  "image": "images/shoe5.jpg",
+  "description":"Product of CA PRO."
+
+},
+{
+  "id": 15,
+  "name": "Big Bang Max",
+  "brand": "CA",
+  "price": 7500,
+  "type": "Pro",
+  "weight": "166 grams",
+  "image": "images/shoe6.jpg",
+  "description":"Product of CA PRO."
+
+},
+{
+  "id": 16,
+  "name": "Big Bang Max",
+  "brand": "CA",
+  "price": 6000,
+  "type": "Pro",
+  "weight": "145 grams",
+  "image": "images/shoe7.jpg",
+  "description":"Product of CA PRO."
+
+},
+{
+  "id": 17,
+  "name": "Big Bang Max",
+  "brand": "CA",
+  "price": 5000,
+  "type": "Pro",
+  "weight": "160 grams",
+  "image": "images/shoe7.jpg",
+  "description":"Product of CA PRO."
+
+}
+    ],
+    "parts": [
+      {
+        "id": 18,
+        "name": "HALF BAT COVER",
+        "brand": "CA",
+        "price": 800,
+        "weight": "150 grams",
+        "material": "Polypropylene Shell",
+        "image": "images/gripbat.jpg",
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 19,
+        "name": "WICKETS",
+        "brand": "CA",
+        "price": 1800,
+        "weight": "3.4 kg",
+        "material": "Steel Grille",
+        "image": "images/w2.jpg",
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 20,
+        "name": "SPRING BACK WICKETS",
+        "brand": "CA",
+        "price": 2500,
+        "weight": "5.4 kg",
+        "material": "CA Wood",
+        "image": "images/cawicket.jpg",
+        "description":"Product of CA PRO."
+      },
+      {
+        "id": 21,
+        "name": "SG Test Helmet",
+        "brand": "SG",
+        "price": 250,
+        "weight": "800 grams",
+        "material": "ABS Plastic",
+        "image": "images/3dgrip.jpg",
+        "description":"Product of CA PRO."
+      }
+    ]
+  }
+  

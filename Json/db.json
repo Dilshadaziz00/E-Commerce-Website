@@ -1,0 +1,121 @@
+{
+  "cricketBats": [
+    {
+      "id": 1,
+      "name": "BA 56 KING'S EDITION",
+      "brand": "Kookaburra",
+      "price": 150,
+      "subPrice":185000,
+      "weight": "2.8 lbs",
+      "material": "High-quality English willow with 9+ grains",
+      "image": "images/CAbat.jpg",
+      "variantImages": [
+        { "src": "images/CAbat1.jpg" },
+        { "src": "images/CAbat2.jpg" },
+        { "src": "images/CAbat.jpg" }
+      ],
+      "description":"The BA 56 King’s Edition English Willow Bat is specially designed for Babar Azam. Made from high-quality English willow with at least 9 grains, this bat gives great power and control. The thick sweet spot and curved blade make strong and accurate shots easy. It has a comfortable cane handle with a soft grip and comes with strong Glass Protek technology. Colorful 3D stickers give it a classy look. It’s ready to play but works best with pre-oiling and knocking."
+    },
+    {
+      "id": 2,
+      "name": "Pro Performance 5000",
+      "brand": "Gunn & Moore",
+      "price": 300,
+      "subPrice":28500,
+      "weight": "2.9 lbs",
+      "material": "Premium-grade English willow",
+      "image": "images/probat.jpg",
+      "variantImages": [
+        { "src": "images/probat1.jpg" },
+        { "src": "images/probat2.jpg" }
+      ],
+      "description":"The Pro Performance 5000 English Willow Bat is made for those cricketers who demand accuracy and punch. The premium quality English willow material it's made from, offers performance, with a huge sweet spot, and balanced grip, and therefore the perfect design for the cricketer wanting to be dominant. The combination of durability with better stroke play has made it the ideal bat for professionals as well as for enthusiastic cricketers."
+    },
+    {
+      "id": 3,
+      "name": "Pro premium Power",
+      "brand": "Gunn & Moore",
+      "price": 300,
+      "subPrice":8500,
+      "weight": "2.9 lbs",
+      "material": "Premium-grade English willow",
+      "image": "images/proPbat.jpg",
+      "variantImages": [
+        { "src": "images/proPbat1.jpg" },
+        { "src": "images/proPbat2.jpg" },
+        { "src": "images/proPbat3.jpg" }
+      ],
+      "description":"Product of CA PRO."
+    }
+   
+  ],
+  "balls": [
+    {
+      "id": 1,
+      "name": "Kookaburra Red King",
+      "brand": "Kookaburra",
+      "price": 20,
+      "type": "Leather",
+      "weight": "156 grams",
+      "image": "https://example.com/kookaburra-red-king.jpg"
+    },
+    {
+      "id": 2,
+      "name": "SG Tournament Ball",
+      "brand": "SG",
+      "price": 25,
+      "subPrice":20,
+      "type": "Leather",
+      "weight": "156 grams",
+      "image": "https://example.com/sg-tournament-ball.jpg"
+    },
+    {
+      "id": 2,
+      "name": "SG Tournament Ball",
+      "brand": "SG",
+      "price": 25,
+      "subPrice":20,
+      "type": "Leather",
+      "weight": "156 grams",
+      "image": "https://example.com/sg-tournament-ball.jpg"
+    },
+    {
+      "id": 3,
+      "name": "COSCO Rubber Ball",
+      "brand": "COSCO",
+      "price": 5,
+      "type": "Rubber",
+      "weight": "150 grams",
+      "image": "https://example.com/cosco-rubber-ball.jpg"
+    }
+  ],
+  "helmets": [
+    {
+      "id": 1,
+      "name": "Shrey Masterclass Air",
+      "brand": "Shrey",
+      "price": 100,
+      "weight": "850 grams",
+      "material": "Polypropylene Shell",
+      "image": "https://example.com/shrey-masterclass-air.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Masuri Vision Series",
+      "brand": "Masuri",
+      "price": 120,
+      "weight": "900 grams",
+      "material": "Steel Grille",
+      "image": "https://example.com/masuri-vision-series.jpg"
+    },
+    {
+      "id": 3,
+      "name": "SG Test Helmet",
+      "brand": "SG",
+      "price": 80,
+      "weight": "800 grams",
+      "material": "ABS Plastic",
+      "image": "https://example.com/sg-test-helmet.jpg"
+    }
+  ]
+}

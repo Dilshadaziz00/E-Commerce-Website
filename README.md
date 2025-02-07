@@ -1,4 +1,4 @@
-# Dilshad Sports
+# Dilshad-Sports
 
 ## Project setup
 ```

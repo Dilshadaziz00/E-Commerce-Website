@@ -58,7 +58,7 @@ const routes = [
 
       },
       {
-        path: 'brand_ambassador/imran-khan',
+        path: 'brand_ambassador/fakhar-zaman',
         name: 'Player',
         component: Player,
 

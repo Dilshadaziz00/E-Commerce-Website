@@ -51,7 +51,7 @@
             </li>
             <li>
 
-              <router-link to="/brand_ambassador/imran-khan" class="text-dark text-decoration-none"
+              <router-link to="/brand_ambassador/fakhar-zaman" class="text-dark text-decoration-none"
                 active-class="active-link">Brand Ambassador</router-link>
 
             </li>

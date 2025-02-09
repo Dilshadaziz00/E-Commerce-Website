@@ -263,7 +263,13 @@ export default {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 11;
     transition: 0.4s ease;
-    /* overflow-y: auto; */
+ 
+}
+@media (max-width: 480px) {
+  .AddCart {
+   
+    width: 300px;
+  }
 }
 .AddCart.is-open {
     right: 10px;

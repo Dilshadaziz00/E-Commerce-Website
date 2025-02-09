@@ -45,11 +45,11 @@
       </div>
 
 
-      <div class="">
-        <h1 class="text-center text-color fw-bold ">All Collection</h1>
+      <div class="text-center">
+        <h1 class="text-center text-color fw-bold heading-with-line">All Collection</h1>
       </div>
       <!-- Fetched data -->
-      <div class="row px-5 mb-5">
+      <div class="row px-5 ">
         <div class="col-12 col-md-6 col-lg-3  my-3" v-for="post in posts" :key="post.id">
           <div class="card position-relative " @click="QuickView(post)">
             <div class="card-body d-flex justify-content-center align-items-center">
@@ -65,10 +65,10 @@
 
 
           </div>
-          <div class="d-md-flex justify-content-between  text-center flex-column  mt-3">
-            <h5 class="text-muted"><strong>{{ post.name }}</strong></h5>
+          <div class="d-md-flex  justify-content-between  text-center flex-column  mt-3">
+            <span class="text-muted name-price-text"><strong class="">{{ post.name }}</strong></span>
             <div>
-              <h5 class=""><strong>Rs.{{ post.price }}</strong></h5>
+              <span class="name-price-text"><strong>Rs.{{ post.price }}</strong></span>
             </div>
           </div>
         </div>
@@ -136,6 +136,30 @@ export default {
 };
 </script>
 <style scoped>
+.heading-with-line {
+    position: relative;
+    display: inline-block;
+}
+
+.heading-with-line::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    margin: 5px auto 0;
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+}
+.name-price-text {
+  font-size: 18px;
+}
+@media screen  and (max-width: 476px) {
+ .name-price-text{
+    font-size: 12px !important;
+  }
+}
 .loader-container {
   align-items: center;
   justify-content: center;

@@ -277,6 +277,12 @@ export default {
   height: 100% !important;
   border-radius: 0px !important;
 }
+@media (max-width: 480px) {
+  .modalContainer {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
 
 .modalContainer {
   position: fixed;

@@ -22,25 +22,37 @@
           <ul class="sidebar-links">
             <li>
 
-              <router-link to="/home" class="text-dark text-decoration-none"  active-class="active-link">Home</router-link>
+              <router-link to="/home" class="text-dark text-decoration-none"
+                active-class="active-link">Home</router-link>
 
             </li>
 
+
             <li>
-              <router-link to="/products" class="text-dark text-decoration-none" active-class="active-link">Products</router-link>
+              <router-link to="/products" class="text-dark text-decoration-none"
+                active-class="active-link">Products</router-link>
 
             </li>
             <li>
 
-              <router-link to="/about" class="text-dark text-decoration-none" active-class="active-link">About us</router-link>
+              <router-link to="/about" class="text-dark text-decoration-none" active-class="active-link">About
+                us</router-link>
             </li>
             <li>
 
-              <router-link to="/contact" class="text-dark text-decoration-none" active-class="active-link"> Contact us</router-link>
+              <router-link to="/contact" class="text-dark text-decoration-none" active-class="active-link"> Contact
+                us</router-link>
 
             </li>
             <li v-if="getCartIcon">
-              <router-link to="/checkout" class="text-dark text-decoration-none" active-class="active-link">Checkout Now</router-link>
+              <router-link to="/checkout" class="text-dark text-decoration-none" active-class="active-link">Checkout
+                Now</router-link>
+
+            </li>
+            <li>
+
+              <router-link to="/brand_ambassador/imran-khan" class="text-dark text-decoration-none"
+                active-class="active-link">Brand Ambassador</router-link>
 
             </li>
           </ul>
@@ -98,10 +110,12 @@ export default {
   color: #000;
   height: 33px;
 }
+
 .active-link {
   color: #ff4c3b !important;
   font-weight: bold;
 }
+
 .menu-icon:hover {
   color: #ff4c3b;
 }

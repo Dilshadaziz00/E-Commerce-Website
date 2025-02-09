@@ -9,6 +9,7 @@ import PostRouterView from './components/PostRouterView.vue';
 import ContactUs from './components/ContactUs.vue';
 import PlaceOrder from './components/PlaceOrder.vue';
 import AllProducts from './components/AllProducts.vue';
+import Player from './components/BrandAmbassador.vue';
 
 
 
@@ -54,6 +55,12 @@ const routes = [
         path: '/products',
         name: 'products',
         component: AllProducts,
+
+      },
+      {
+        path: 'brand_ambassador/imran-khan',
+        name: 'Player',
+        component: Player,
 
       },
       {

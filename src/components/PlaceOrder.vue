@@ -67,7 +67,7 @@
         <div class="product-details" v-if="!orderMessage">
           <div>
             <div class="product-item   d-flex flex-wrap justify-content-between" v-for="item in LocalItems" :key="item.id">
-              <div class="d-flex">
+              <div class="d-flex product-item">
                 <div>
 
                   <img :src="`/${item.image}`" alt="" class="" style="width: 50px;">
@@ -232,6 +232,13 @@ export default {
 </script>
 <style scoped>
 /* General Layout */
+@media screen  and (max-width: 400px) {
+ .product-item{
+    display: flex ;
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+}
 .order-now {
   max-width: 1200px;
   margin: 0 auto;

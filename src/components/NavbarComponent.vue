@@ -11,21 +11,18 @@
       </div>
 
       <div class="icons d-flex gap-2 justify-content-between">
-        <!-- <div> 
-    <b-icon icon="search" aria-hidden="true" class="icon"></b-icon>
-  </div> -->
 
   <div class="counter-parent"  @click="openSideCart()">
-  <b-icon icon="cart-fill" aria-hidden="true" class="icon"></b-icon>
+  <b-icon icon="cart-fill" aria-hidden="true" title="Your Cart" class="icon"></b-icon>
   <span class="counter" v-if="getCartIcon">
     <span class="ping"></span>
   </span>
 </div>
 
-        <div>
+        <div class="d-none d-sm-block">
           <b-icon icon="facebook" aria-hidden="true" class="icon"></b-icon>
         </div>
-        <div>
+        <div  class="d-none d-sm-block" >
           <b-icon icon="heart-fill" aria-hidden="true" class="icon"></b-icon>
         </div>
       </div>
@@ -114,6 +111,14 @@ export default {
   100% {
     transform: scale(2);
     opacity: 0;
+  }
+}
+@media screen and (max-width: 576px) { 
+  .logo  {
+    width: 28px !important;
+  }
+  .logo span {
+    font-size: 12px !important;
   }
 }
 

@@ -1,44 +1,49 @@
 <template>
     <div class="container-fluid ">
-        <h1 class="text-center text-color mt-3 fw-bold">Best Sellers</h1>
+
         <div class="row">
+
             <div class="page-left-side col-md-3">
 
                 <div class="">
-                    <h2 class="px-md-5 text-color fw-bold">Categories</h2>
+                    <h2 class="px-md-5 text-color fw-bold heading-with-line">Categories</h2>
                     <ul
                         class="list-unstyled px-md-5 px-1 fs-md-3 fs-4 py-3  d-flex flex-md-column flex-row gap-md-0 gap-3 flex-wrap">
-                        <li class="py-2 py-md-3" >
-                             <span class="d" @click="ChangeRoutes()"> <router-link class="router_Links" :class="{ active: activeItem === 'Bats' }"
-                                :to="{ path: '/products/bats' }">Cricket Bats</router-link></span>
+                        <li class="py-2 ">
+                            <span class="d" @click="ChangeRoutes()"> <router-link class="router_Links"
+                                    :class="{ active: activeItem === 'Bats' }" :to="{ path: '/products/bats' }">Cricket
+                                    Bats</router-link></span>
                         </li>
-                        <li class="py-2 py-md-3">
+                        <li class="py-2 ">
                             <span class="d" @click="ChangeRoutes()">
-                            <router-link class="router_Links" :class="{ active: activeItem === 'Ball' }"
-                                :to="{ path: '/products/balls' }">Cricket Balls</router-link></span>
+                                <router-link class="router_Links" :class="{ active: activeItem === 'Ball' }"
+                                    :to="{ path: '/products/balls' }">Cricket Balls</router-link></span>
 
                         </li>
-                        <li class="py-2 py-md-3" >
+                        <li class="py-2 ">
                             <span class="d" @click="ChangeRoutes()">
-                            <router-link class="router_Links" :class="{ active: activeItem === 'Kits' }"
-                                :to="{ path: '/products/kits' }"> Complete Kits</router-link></span>
+                                <router-link class="router_Links" :class="{ active: activeItem === 'Kits' }"
+                                    :to="{ path: '/products/kits' }"> Complete Kits</router-link></span>
 
                         </li>
-                        <li class="py-2 py-md-3" >
+                        <li class="py-2 ">
                             <span class="d" @click="ChangeRoutes()">
-                            <router-link class="router_Links" :class="{ active: activeItem === 'Shoes' }"
-                                :to="{ path: '/products/shoes' }"> Cricket Shoes</router-link></span>
+                                <router-link class="router_Links" :class="{ active: activeItem === 'Shoes' }"
+                                    :to="{ path: '/products/shoes' }"> Cricket Shoes</router-link></span>
                         </li>
-                        <li class="py-2 py-md-3">
+                        <li class="py-2 ">
                             <span class="d" @click="ChangeRoutes()">
-                            <router-link class="router_Links" :class="{ active: activeItem === 'Parts' }"
-                                :to="{ path: '/products/accessories' }"> Cricket Accessories</router-link></span>
+                                <router-link class="router_Links" :class="{ active: activeItem === 'Parts' }"
+                                    :to="{ path: '/products/accessories' }"> Accessories</router-link></span>
                         </li>
                     </ul>
                 </div>
 
             </div>
             <div class="page-right-side col-md-9 mt-3">
+                <div class="text-center mb-4">
+                    <h1 class="text-center text-color mt-3 fw-bold heading-with-line">Best Sellers</h1>
+                </div>
                 <VueSlickCarousel v-bind="settings">
                     <div v-for="(image, index) in images" :key="index">
                         <div class=" overflow-hidden position-relative">
@@ -62,17 +67,17 @@
                         </div>
 
                         <div class="info-container d-flex justify-content-center align-items-center ">
-                            <div class="d-flex justify-content-center align-items-center gap-3" v-if="post.loading ">
+                            <div class="d-flex justify-content-center align-items-center gap-3" v-if="post.loading">
                                 <div class="spinner-border" style="height:40px; width:40px" role="status"></div>
                                 <div>Loading...</div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="d-md-flex justify-content-between  text-center flex-column  mt-3">
-                        <h5 class="text-muted"><strong>{{ post.name }}</strong></h5>
+                    <div class="d-md-flex  justify-content-between  text-center flex-column  mt-3">
+                        <span class="text-muted name-price-text"><strong class="">{{ post.name }}</strong></span>
                         <div>
-                            <h5><strong>Rs.{{ post.price }}</strong></h5>
+                            <span class="name-price-text"><strong>Rs.{{ post.price }}</strong></span>
                         </div>
                     </div>
                 </div>
@@ -158,31 +163,31 @@ export default {
 
     },
     methods: {
- 
+
         async fetchCategory(item, apiField, headText) {
-    this.posts = [];
-    this.headText = headText;
-    this.activeItem = item;
-    this.isLoading = true;
-    
-    try {
-        const response = await axios.get('/db.json');
-        this.posts = response.data[apiField];
-    } catch (error) {
-        console.error(`Error fetching ${headText}:`, error);
-    } finally {
-        this.isLoading = false;
-    }
-},
+            this.posts = [];
+            this.headText = headText;
+            this.activeItem = item;
+            this.isLoading = true;
+
+            try {
+                const response = await axios.get('/db.json');
+                this.posts = response.data[apiField];
+            } catch (error) {
+                console.error(`Error fetching ${headText}:`, error);
+            } finally {
+                this.isLoading = false;
+            }
+        },
 
         // All
         QuickView(post) {
             this.$set(post, 'loading', true); // Ensure reactivity
-      setTimeout(() => {
-        this.$refs.openModal.openModal(post.id);
-        this.$set(post, 'loading', false); // Ensure reactivity
-      }, 1000);
-    },
+            setTimeout(() => {
+                this.$refs.openModal.openModal(post.id);
+                this.$set(post, 'loading', false); // Ensure reactivity
+            }, 1000);
+        },
         async AllProducts() {
             this.isLoading = true;
             try {
@@ -195,9 +200,9 @@ export default {
                         ...response.data.parts,
                         ...response.data.kits,
                     ])].map(post => ({
-          ...post,
-          loading: false
-        }));
+                        ...post,
+                        loading: false
+                    }));
             } catch (error) {
                 console.error('Error fetching all products:', error);
             } finally {
@@ -225,7 +230,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.name-price-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 476px) {
+    .name-price-text {
+        font-size: 12px !important;
+    }
+}
+
 .info-container {
     height: 100%;
     position: absolute;

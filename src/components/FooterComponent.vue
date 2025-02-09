@@ -62,7 +62,7 @@
       </div>
 
     </footer>
-    <div class="p-2 bg-light"> <p class="text-center text-muted my-2"> 2024 CA Pro ( PVT.LTD ). All rights reserved. Powered by: Dilshad Aziz</p></div>
+    <div class="p-2 bg-light"> <p class="text-center text-muted my-2"> 2024 CA Pro ( PVT.LTD ). All rights reserved. Created by: Dilshad Aziz</p></div>
   </div>
 </template>
 

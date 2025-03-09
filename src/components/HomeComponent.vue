@@ -167,7 +167,7 @@ export default {
 }
 
 .scroll-container {
-  height: 878px;
+  height: 478px;
   overflow-x: hidden;
   overflow-y: auto;
 }
